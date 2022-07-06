@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CF29E1"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etnama_pelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Nama Pelanggan"
+        android:hint="@string/nama_pelanggan"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/alamat_pelanggan"
+        android:layout_below="@id/etnama_pelanggan"
+        android:id="@+id/etalamat_pelanggan"
+        android:autofillHints="Alamat"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/tvjenis_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etalamat_pelanggan"
+        android:layout_marginTop="15dp"
+        android:text="@string/jenis_kelamin" />
+
+    <RadioGroup
+        android:id="@+id/rgjenis_kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etalamat_pelanggan"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_pria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100sp"
+            android:text="@string/pria" />
+
+        <RadioButton
+            android:id="@+id/rb_perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:text="@string/perempuan" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_pelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvjenis_kelamin"
+        android:layout_marginTop="15dp"
+        android:text="Tipe Pelanggan" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_pelanggan"
+        android:id="@+id/rg_tipe_pelanggan">
+
+        <RadioButton
+            android:id="@+id/rb_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold" />
+
+        <RadioButton
+            android:id="@+id/rb_silver"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/silver" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rd_biasa"
+            android:text="@string/biasa"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_namaBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvjenis_kelamin"
+        android:layout_marginStart="200sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nama_barang" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_namaBarang"
+        android:id="@+id/rgNamaBarang"
+        android:layout_toRightOf="@id/tv_pelanggan"
+        android:layout_marginStart="95dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/rb_android"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_namaBarang"
+            android:text="@string/android" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_namaBarang"
+            android:text="@string/iphone"
+            android:id="@+id/rb_iphone"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_namaBarang"
+            android:text="@string/windows_phone"
+            android:id="@+id/rb_windowsPhone"/>
+
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_jumlahBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgNamaBarang"
+        android:hint="Jumlah Barang" />
+
+    <Button
+        android:id="@+id/btn_proses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_jumlahBarang"
+        android:text="@string/proses" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_jumlahBarang"
+        android:layout_marginStart="110sp"
+        android:text="@string/cancel"
+        android:id="@+id/btn_cancel"/>
+
+
+</RelativeLayout>

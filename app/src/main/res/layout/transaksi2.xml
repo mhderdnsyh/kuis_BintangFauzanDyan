@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F158E1"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota Transaksi"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tvnota"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnota"
+        android:text="Tipe Member"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_member"/>
+
+    <TextView
+        android:id="@+id/tv_pelanggan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_member"
+        android:layout_marginTop="50sp"
+        android:text="Nama Pelanggan :" />
+
+    <TextView
+        android:id="@+id/tv_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pelanggan"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin :" />
+
+    <TextView
+        android:id="@+id/tv_nt_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_kelamin"
+        android:layout_marginTop="10dp"
+        android:text="Alamat pelanggan :" />
+
+    <TextView
+        android:id="@+id/tv_nt_nama_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nt_alamat"
+        android:layout_marginTop="10dp"
+        android:text="Nama Barang :" />
+
+    <TextView
+        android:id="@+id/tv_nt_jumlah_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nt_nama_barang"
+        android:layout_marginTop="10dp"
+        android:text="Jumlah Barang :" />
+
+    <TextView
+        android:id="@+id/nt_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_nt_jumlah_barang"
+        android:layout_marginTop="10dp"
+        android:text="Harga :" />
+
+    <TextView
+        android:id="@+id/nt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nt_harga"
+        android:layout_marginTop="10dp"
+        android:text="Total Harga" />
+
+    <TextView
+        android:id="@+id/tv_nt_dis_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nt_total"
+        android:layout_marginTop="10dp"
+        android:text="Disc. Harga :" />
+
+    <TextView
+        android:id="@+id/nt_dis_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nt_dis_harga"
+        android:layout_marginTop="10dp"
+        android:text="Disc. member :" />
+
+    <TextView
+        android:id="@+id/nt_jumlah_bayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nt_dis_member"
+        android:layout_marginTop="10dp"
+        android:text="Jumlah Bayar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nt_jumlah_bayar"
+        android:layout_marginTop="15dp"
+        android:text="Terimakasih Sudah Berbelanja Di Tempat Kami"
+        android:id="@+id/nt_terimaKasih"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nt_terimaKasih"
+        android:layout_marginTop="20dp"
+        android:text="print nota"/>
+
+</RelativeLayout>

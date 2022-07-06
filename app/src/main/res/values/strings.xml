@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">kuis_BintangFauzanDyan</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="alamat_pelanggan">Alamat pelanggan</string>
+    <string name="jenis_kelamin">Jenis kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="tipe_pelanggan">Tipe pelanggan</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="gold">Gold</string>
+    <string name="silver">Silver</string>
+    <string name="biasa">Biasa</string>
+    <string name="android">Android</string>
+    <string name="iphone">Iphone</string>
+    <string name="windows_phone">Windows Phone</string>
+    <string name="jumlah_barang">Jumlah barang</string>
+    <string name="proses">proses</string>
+    <string name="cancel">cancel</string>
+</resources>
